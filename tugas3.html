@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Formulir Pendaftaran Siswa</h2>
+  <form action="proses_pendaftaran.php" method="POST" enctype="multipart/form-data">
+    <table>
+      <tr>
+        <td><label for="nama">Nama Calon Siswa</label></td>
+        <td><p>:</p></td>
+        <td><input type="text" id="nama" name="nama" required></td>
+      </tr>
+      <tr>
+      <td><label for="tempat/tanggal_lahir">Tempat/tanggal_Lahir</label></td>
+      <td><p>:</p></td>
+      <td><input type="tempat/tangggal_lahir" id="tempat/tanggal_Lahir" name="tempat/tanggal_Lahir" required>
+      <input type="date" required></td>
+      </tr>
+      <tr>
+      <td><label for="agama">Agama</label></td>
+      <td><p>:</p></td>
+      <td><select id="agama" name="agama" required>
+          <option value="">Pilih Agama</option>
+          <option value="Islam">Islam</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Katolik">Katolik</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Buddha">Buddha</option>
+          <option value="Konghucu">Konghucu</option>
+      </td></select>
+      </tr>
+      <tr>
+      <td><label for="alamat">Alamat</label></td>
+      <td><p>:</p></td>
+      <td><textarea id="alamat" name="alamat" rows="6" cols="70" required></textarea></td>
+      </tr>
+      <tr>
+      <td><label for="no_hp">No. Telp/HP</label></td>
+      <td><p>:</p></td>
+      <td><input type="tel" id="no_hp" name="no_hp" required></td>
+      </tr>
+      <tr>
+      <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+      <td><p>:</p></td>
+      <td><input type="radio" id="pria" name="jk" value="pria" required>
+      <label for="pria">pria</label></td>
+      <td><input type="radio" id="wanita" name="jk" value="wanita" required>
+      <label for="wanita">wanita</label></td>
+      </tr>
+      <tr>
+        <br><br>
+        <td><label for="hobi">hobi</label></td>
+        <td><p>:</p></td>
+        <td><input type="checkbox" name="hobi" id="membaca">
+        <label for="membaca">Membaca</label></td>
+        <td><input type="checkbox" name="hobi" id="menulis">
+        <label for="menulis">Menulis</label></td>
+        <td><input type="checkbox" name="hobi" id="makan">
+        <label for="makan">Makan</label></td>
+        <br><br>
+      </tr>
+      <tr>
+      <td><label for="foto">Pas Foto</label></td>
+      <td><p>:</p></td>
+      <td><input type="file" id="foto" name="foto" accept="image/*" required></td>
+      <br><br>
+    </tr>
+      <tr>
+      <td><input type="submit" value="Submit"></td>
+      <td></table></td>
+    </tr>
+  </form>
+</body>
+</html>
